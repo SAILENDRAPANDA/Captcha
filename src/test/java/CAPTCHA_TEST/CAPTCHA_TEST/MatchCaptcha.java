@@ -66,7 +66,7 @@ public class MatchCaptcha {
 			e.printStackTrace();
 		}
 		
-	 
+	 //this is for mathematical captcha only
 	 
 	 driver.close();
 	}
