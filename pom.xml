@@ -29,7 +29,7 @@
             <version>2.19</version>
             <configuration>
             <suiteXmlFiles>
-            <suiteXmlFile>C:\Users\Public\Documents\IDENEW\PomPractice\testng.xml</suiteXmlFile>
+            <suiteXmlFile>C:\Users\Public\Documents\IDENEW\CAPTCHA_TEST\testng.xml</suiteXmlFile>
             </suiteXmlFiles></configuration>
         </plugin>
          <plugin>
@@ -133,6 +133,13 @@
     <artifactId>java-ocr-api</artifactId>
     <version>15.3.0.3</version>
 </dependency>
+<!-- https://mvnrepository.com/artifact/net.rcarz/jira-client -->
+<dependency>
+    <groupId>net.rcarz</groupId>
+    <artifactId>jira-client</artifactId>
+    <version>0.5</version>
+</dependency>
+
    
   </dependencies>
 </project>

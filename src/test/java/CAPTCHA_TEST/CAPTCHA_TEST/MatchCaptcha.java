@@ -18,8 +18,12 @@ public class MatchCaptcha {
 			driver.get("https://www.chronoengine.com/faqs/55-chronoforms/cfv4/cfv4-anti-spam/2573-how-can-i-use-a-captcha-like-134");
 
 			String s1=driver.findElement(By.xpath("//*[@class='item-page']//h2")).getText();
-	 System.out.println(s1);		
-		String n[]=s1.split(" ");
+	 System.out.println(s1);
+	 String c=s1.replaceAll(" ","\r\n");
+	 System.out.println(c);
+		
+	 
+	 String n[]=s1.split(" ");
 		String s2=n[0];
 		System.out.println(s2);
 		

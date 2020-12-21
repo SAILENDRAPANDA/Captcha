@@ -56,6 +56,7 @@ public class Captcha {
 	
 	driver.findElement(By.xpath("//input[@id='userId']")).sendKeys("12354");
 //	driver.switchTo().frame(0);
+	Thread.sleep(3000);
 File screenshot=driver.findElement(By.xpath("//*[@id='nlpImgContainer']")).getScreenshotAs(OutputType.FILE);
 //	
 File screenshotLocation = new File("C:\\Users\\Public\\Documents\\IDENEW\\CAPTCHA_TEST\\src\\test\\java\\CAPTCHA_TEST\\CAPTCHA_TEST\\New7.png");
@@ -64,8 +65,9 @@ ITesseract img= new Tesseract();
 img.setDatapath("C:\\Users\\Public\\Documents\\IDENEW\\CAPTCHA_TEST\\src\\test\\java\\CAPTCHA_TEST\\CAPTCHA_TEST\\tessdata");
 
 String imgtxt=img.doOCR(screenshotLocation);
+String imgtxt1=imgtxt.replaceAll("[\r\n]+"," ");
 //
-System.out.println(imgtxt);
+System.out.println(imgtxt1);
 
 //String s1[]=imgtxt.split("below");
 //
